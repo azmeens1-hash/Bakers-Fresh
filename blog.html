@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bakers Fresh | Services</title>
+
+<link rel="stylesheet"  href="css/blog.css">
+</head>
+<body>
+<header>
+  <div class="logo"><h2>Baker's Fresh</h2></div>
+  <nav>
+    <ul id="navLinks">
+       <li class="dropdown">
+        <a href="pages/index.html">Home▾</a>
+        <ul class="dropdown-menu">
+      <li><a href="pages/home2.html">Home2</a></li>
+         </ul></li>
+     
+      <li><a href="pages/about.html">About</a></li>
+      
+      <li class="dropdown">
+        <a href="pages/services.html">Services▾</a>
+        <ul class="dropdown-menu">
+      <li><a href="pages/servicedetails.html">servicedetails</a></li>
+         </ul></li>
+     
+      <li><a href="pages/blog.html">Blog</a></li>
+      <li><a href="pages/contact.html">Contact</a></li>
+      <li><a href="pages/login.html" class="signup btn">sign-up</a></li>
+      <li><a href="pages/admin panel.html " class="admin btn">Admin</a></li>
+    </ul>
+    </ul>
+  </nav>
+  <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+</header>
+
+ <section class="blog-hero">
+    <h1>Sweet Stories & Baking Tips</h1>
+    <p>Discover cake trends, baking secrets, and celebration ideas.</p>
+  </section>
+
+  
+  <section class="blog-controls">
+    <input type="text" id="searchInput" placeholder="Search blog...">
+    
+    <div class="filter-buttons">
+      <button onclick="filterPosts('all')" class="active">All</button>
+      <button onclick="filterPosts('tips')">Tips</button>
+      <button onclick="filterPosts('trends')">Trends</button>
+      <button onclick="filterPosts('recipes')">Recipes</button>
+    </div>
+  </section>
+
+  
+  <section class="blog-container" id="blogContainer">
+
+    <div class="blog-card" data-category="tips">
+      <img src="Images/blog-1.jpg" alt="">
+      <div class="blog-content">
+        <h3>How to Keep Cakes Moist</h3>
+        <p style="color:#333;">Learn the secret techniques our bakers use to keep cakes soft and delicious.</p>
+        <a href="pages/blogdetails.html">Read More</a>
+      </div>
+    </div>
+
+    <div class="blog-card" data-category="trends">
+      <img src="Images/blog-2.jpg" alt="">
+      <div class="blog-content">
+        <h3>2026 Wedding Cake Trends</h3>
+        <p style="color:#333">Explore elegant and modern wedding cake designs for your big day.</p>
+        <a href="blogdetails.html">Read More</a>
+      </div>
+    </div>
+
+    <div class="blog-card" data-category="recipes">
+      <img src="Images/chocolate.jpg" alt="">
+      <div class="blog-content">
+        <h3>Classic Chocolate Cake Recipe</h3>
+        <p style="color:#333">A rich and moist chocolate cake recipe you can try at home.</p>
+        <a href="pages/blogdetails.html">Read More</a>
+      </div>
+    </div>
+
+    <div class="blog-card" data-category="tips">
+      <img src="Images/cake-storage.jpg" alt="">
+      <div class="blog-content">
+        <h3>Cake Storage Guide</h3>
+        <p style="color:#333;">Best practices to store cakes and keep them fresh longer.</p>
+        <a href="pages/blogdetails.html">Read More</a>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+  <div class="footer-container">
+
+  
+    <div class="footer-left">
+      <h2 class="logo">Bakers Fresh</h2>
+      <p class="desc">
+        Freshly baked cakes & pastries crafted with love and premium 
+        ingredients for your special celebrations.
+      </p>
+      </div>
+       
+
+      <div class="links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="home2.html">Home2</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+     
+
+
+    
+<div class="footer-right">
+      
+<div class="contact">
+        <h3>Contact</h3>
+        <p>Hyderabad, India</p>
+        <p>+91 98765 43210</p>
+        <p>info@bakersfresh.com</p>
+      </div>
+    
+      <div class="subscribe">
+        <h3>Subscribe</h3>
+        <input type="email" placeholder="Enter your email">
+        <button>Subscribe</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer-line"></div>
+
+  <div class="footer-bottom">
+    © 2026 Bakers Fresh | All Rights Reserved
+  </div>
+  
+</footer>
+
+    <script src="js/blog.js"></script>
+    
+
+</body>
+</html>

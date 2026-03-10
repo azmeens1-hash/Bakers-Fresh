@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bakers Fresh Admin Dashboard</title>
+
+<link rel="stylesheet" href="css/admin panel.css">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+
+
+<body>
+
+<div class="dashboard">
+
+  
+  <aside class="sidebar" id="sidebar">
+    <h2 class="logo">Bakers Fresh</h2>
+    <ul>
+      <li class="active">Dashboard</li>
+      <li>Orders</li>
+      <li>Products</li>
+      <li>Customers</li>
+     
+      <li>Settings</li>
+    </ul>
+  </aside>
+
+ 
+  <main class="main">
+
+    
+    <header class="topbar">
+      <button id="toggleBtn"><i class="fa fa-bars"></i></button>
+
+      <div class="search">
+        <input type="text" placeholder="Search...">
+      </div>
+<button class="btn darkToggle" id="darkMode">Toggle Dark Mode</button>
+      <div class="profile">
+        <i class="fa fa-bell"></i>
+        <div class="admin">
+          <img src="">
+          <span>Admin</span>
+        </div>
+      </div>
+    </header>
+
+    
+    <section class="cards">
+      <div class="card">
+        <i class="fa fa-shopping-cart"></i>
+        <h3 class="counter" data-target="1240">0</h3>
+        <p>Total Orders</p>
+        <span class="growth">+12% this week</span>
+      </div>
+
+      <div class="card">
+        <i class="fa fa-indian-rupee-sign"></i>
+        <h3 class="counter" data-target="85600">0</h3>
+        <p>Total Revenue</p>
+        <span class="growth">+8% this week</span>
+      </div>
+
+      <div class="card">
+        <i class="fa fa-users"></i>
+        <h3 class="counter" data-target="540">0</h3>
+        <p>Total Customers</p>
+        <span class="growth">+5% this week</span>
+      </div>
+
+      <div class="card">
+        <i class="fa fa-bread-slice"></i>
+        <h3 class="counter" data-target="86">0</h3>
+        <p>Total Products</p>
+        <span class="growth">+3% this week</span>
+      </div>
+    </section>
+
+    
+    <section class="section">
+      <h2>Orders Management</h2>
+      <input type="text" id="orderSearch" placeholder="Search Orders...">
+
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Customer</th>
+            <th>Product</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="orderTable">
+          <tr>
+            <td>#101</td>
+            <td>Riya</td>
+            <td>Chocolate Cake</td>
+            <td>26 Feb 2026</td>
+            <td><span class="badge pending">Pending</span></td>
+            <td>
+              <button class="btn">View</button>
+              <button class="btn">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>#102</td>
+            <td>Arjun</td>
+            <td>Cupcakes</td>
+            <td>25 Feb 2026</td>
+            <td><span class="badge delivered">Delivered</span></td>
+            <td>
+              <button class="btn">View</button>
+              <button class="btn">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    
+    <section class="section">
+      <h2>Products</h2>
+      <button class="addBtn" id="openModal">Add New Product</button>
+
+      <div class="products" id="productContainer">
+        <div class="product-card">
+          <img src="Images/strawberry.jpg">
+          <h4>Strawberry Cake</h4>
+          <p>₹500</p>
+          <span>Stock: 12</span>
+          <div>
+            <button class="btn">Edit</button>
+            <button class="btn">Delete</button>
+          </div>
+        </div>
+      </div>
+       <div class="product-card">
+          <img src="Images/chocolate.jpg">
+          <h4>chocolate Cake</h4>
+          <p>₹500</p>
+          <span>Stock: 12</span>
+          <div>
+            <button class="btn">Edit</button>
+            <button class="btn">Delete</button>
+          </div>
+    </section>
+
+   
+    
+
+    
+    <section class="section">
+      <h2>Customers</h2>
+      <ul class="customer-list">
+        <li>Riya - 9876543210 <button class="btn">History</button></li>
+        <li>Arjun - 9123456789 <button class="btn">History</button></li>
+      </ul>
+    </section>
+
+   
+    <section class="section">
+      <h2>Settings</h2>
+      <label>Bakery Name</label>
+      <input type="text" value="Bakers Fresh">
+      <label>Phone</label>
+      <input type="text" value="9876543210">
+      <button class="btn">Save</button>
+      <button class="btn darkToggle" id="darkMode">Toggle Dark Mode</button>
+    </section>
+
+  </main>
+</div>
+
+
+<div class="modal" id="productModal">
+  <div class="modal-content">
+    <h3>Add Product</h3>
+    <input type="text" id="productName" placeholder="Product Name">
+    <input type="number" id="productPrice" placeholder="Price">
+    <input type="number" id="productStock" placeholder="Stock">
+    <button id="addProduct" class="btn">Add</button>
+    <button id="closeModal" class="btn">Close</button>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/admin panel.js"></script>
+
+
+</body>
+</html>

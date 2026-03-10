@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bakers Fresh - Login / Signup</title>
+<link rel="stylesheet"  href="css/login.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="auth-card">
+
+    <div class="toggle-buttons">
+      <button id="loginBtn" class="active">Login</button>
+      <button id="signupBtn">Sign Up</button>
+    </div>
+
+    <div class="forms">
+
+     
+      <form id="loginForm" class="form active">
+        
+        <div class="input-group">
+          <input type="email" required>
+          <label>Email Address</label>
+        </div>
+
+        <div class="input-group">
+          <input type="password" id="loginPassword" required>
+          <label>Password</label>
+          <i class="fa fa-eye togglePassword" data-target="loginPassword"></i>
+        </div>
+
+        <div class="extra">
+          <label><input type="checkbox"> Remember Me</label>
+          <a href="#">Forgot Password?</a>
+        </div>
+
+        <button type="submit" class="submit-btn">Login</button>
+
+        
+
+        <p class="message" id="loginMessage"></p>
+      </form>
+
+     
+      <form id="signupForm" class="form">
+        
+        <div class="input-group">
+          <input type="text" required>
+          <label>Full Name</label>
+        </div>
+
+        <div class="input-group">
+          <input type="email" required>
+          <label>Email Address</label>
+        </div>
+
+        <div class="input-group">
+          <input type="tel" required>
+          <label>Phone Number</label>
+        </div>
+
+        <div class="input-group">
+          <input type="password" id="signupPassword" required>
+          <label>Password</label>
+          <i class="fa fa-eye togglePassword" data-target="signupPassword"></i>
+        </div>
+
+        <div class="input-group">
+          <input type="password" id="confirmPassword" required>
+          <label>Confirm Password</label>
+        </div>
+
+        <button type="submit" class="submit-btn">Create Account</button>
+
+        <p class="message" id="signupMessage"></p>
+      </form>
+
+    </div>
+
+    <button class="dark-toggle" id="darkToggle">🌙 Dark Mode</button>
+
+  </div>
+
+</div>
+<script src="js/login.js"></script>
+</body>
+</html>
