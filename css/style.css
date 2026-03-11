@@ -16,9 +16,6 @@ body.dark{
 }
 
 
-* {
-  transition: all 0.3s ease-in-out;
-}
 
 
 .hero {
@@ -646,7 +643,7 @@ box-shadow:0 8px 20px rgba(0,0,0,0.3),
 }
 
 @media(max-width:640px){
-  nav ul{
+   nav ul{
     position:absolute;
     top:70px;
     right:0;
@@ -656,6 +653,7 @@ box-shadow:0 8px 20px rgba(0,0,0,0.3),
     padding:20px;
     display:none;
     box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    align-items: center;
   }
 
   nav ul.active{
@@ -668,6 +666,9 @@ box-shadow:0 8px 20px rgba(0,0,0,0.3),
   .menu-toggle{
     display:block;
   }
+
+
+   
 .hero h1 {
     font-size: 28px;
     text-align: center;
@@ -757,12 +758,12 @@ box-shadow:0 8px 20px rgba(0,0,0,0.3),
     justify-content: space-between;
     align-items: center;
     padding: 15px 5%;
-    flex-wrap: nowrap;
+    
     gap:10px;
   }
 
   nav ul {
-    display: flex;
+    /* display: flex; */
     align-items: center;
     gap: 20px;
     flex-wrap: nowrap;   
